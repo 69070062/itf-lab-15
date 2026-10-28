@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="เว็บสุ่มเมนูอาหาร">
+  <title>FOODPICKER | ITF Lab 15</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="./">🍴 FOODPICKER <span>ITF</span></a>
+  </header>
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">วันนี้กินอะไรดี?</p>
+      <h1>คิดเมนูไม่ออก <span>ให้เราสุ่มให้!</span></h1>
+      <p class="subtitle">กดปุ่มเพื่อค้นหาไอเดียมื้ออร่อยจากเมนูที่เราคัดมาให้</p>
+    </section>
+    <section class="food-card" aria-live="polite">
+      <div class="photo-wrap"><img id="food-image" src="images/food-1.jpg" alt="ภาพประกอบข้าวมันไก่"></div>
+      <div class="details">
+        <p class="small-label">เมนูที่สุ่มได้</p>
+        <h2 id="food-name">ข้าวมันไก่</h2>
+        <p id="food-description">ข้าวมันหอม ๆ เสิร์ฟพร้อมไก่นุ่มและน้ำจิ้มรสเด็ด</p>
+        <p class="price">เริ่มต้น <strong id="food-price">55</strong> บาท</p>
+      </div>
+    </section>
+    <button id="random-btn" type="button">🎲 สุ่มเมนูอาหาร</button>
+    <p class="hint" id="status" role="status">มีทั้งหมด 6 เมนูให้ลองสุ่ม</p>
+  </main>
+</body>
+</html>
